@@ -1,6 +1,6 @@
 local require = GLOBAL.require
 
-local Text = require "widget/text"
+local Text = require "widgets/text"
 
 local DST = GLOBAL.TheSim.GetGameID ~= nil and GLOBAL.TheSim:GetGameID() == "DST"
 
