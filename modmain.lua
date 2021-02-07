@@ -5,7 +5,8 @@ local Text = require "widgets/text"
 local DST = GLOBAL.TheSim.GetGameID ~= nil and GLOBAL.TheSim:GetGameID() == "DST"
 
 local function ConstrolsPostConstruct(self)
-  self.custom_ui = self:AddChild(Text(GLOBAL.UIFONT, "HELLO"))
+  self.custom_ui = self:AddChild(Text(GLOBAL.UIFONT, 24))
+  self.custom_ui:SetString("HELLO")
   self.custom_ui:MoveToFront()
 end
 
